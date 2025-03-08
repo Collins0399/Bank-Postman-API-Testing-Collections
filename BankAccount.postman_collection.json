@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "0bcc22e8-d0c6-4782-bed1-e69cf380cc2a",
+		"name": "BankAccount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41304267"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"AccountNumber\": \"1234665423\",\r\n    \"AccountHolder\": \"Collins Kiprotich\",\r\n    \"BankId\": 4,\r\n    \"IFSC\": \"IFSC003\"\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7187/api/BankAccount"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7187/api/BankAccount"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7187/api/BankAccount/5"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BankAccountId\": 5,\r\n  \"AccountNumber\": \"0987654321\",\r\n  \"AccountHolder\": \"Adam Smith\",\r\n  \"BankId\": 3,\r\n  \"IFSC\": \"IFSC002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7187/api/BankAccount/5"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://localhost:7187/api/BankAccount/3"
+			},
+			"response": []
+		}
+	]
+}
